@@ -216,8 +216,8 @@ def show_blobs_in_heatmap(heatmap, blobs):
 
     [i,j] = np.unravel_index(heatmap.argmin(), heatmap.shape)
     cv2.circle(heatmap_with_blobs, (j,i), 3, (0,255,0))
-    cv2.imshow("Heatmap Blobs", heatmap_with_blobs)
-    cv2.waitKey(0)
+    #cv2.imshow("Heatmap Blobs", heatmap_with_blobs)
+    #cv2.waitKey(0)
 
 
 def dist(pt1, pt2):

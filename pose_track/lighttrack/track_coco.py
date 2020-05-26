@@ -139,9 +139,8 @@ def light_track_camera(pose_estimator, video_capture):
                 keypoints_list_q.append(keypoints_list)
 
                 flag_mandatory_keyframe = True
-                cv2.imshow('frame', cur_img)
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
+                #if cv2.waitKey(1) & 0xFF == ord('q'):
+                #    break
                 continue
 
             ''' 2. statistics: get total number of detected persons '''
@@ -347,11 +346,10 @@ def light_track_camera(pose_estimator, video_capture):
         vis_img = visualize_img(cur_img, cur_candidates, img_id, change_color=change_color)
 
         # provide a way to exit
-        cv2.imshow('frame', vis_img)
         out.write(vis_img)
 
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+        #if cv2.waitKey(1) & 0xFF == ord('q'):
+        #    break
 
         if change_color:
             print("KEY FRAME .............")

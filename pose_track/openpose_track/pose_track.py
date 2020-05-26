@@ -76,8 +76,8 @@ class PoseTrack():
             pass
 
         image = resize_img(image, 480)[0]
-        cv2.imshow("track result", image)
-        cv2.waitKey(5)
+        #cv2.imshow("track result", image)
+        #cv2.waitKey(5)
 
     # MAIN FUNCTION
     def pose_track(self, image, img_id=None, dets_list_q=None):
