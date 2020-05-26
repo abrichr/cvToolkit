@@ -4,7 +4,6 @@ import collections
 # import vision essentials
 import cv2
 import numpy as np
-import ipdb; pdb=ipdb.set_trace
 import sys, os, time
 
 # import GCN utils

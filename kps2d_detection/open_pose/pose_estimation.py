@@ -4,7 +4,6 @@ import os
 from sys import platform
 import argparse
 from tqdm import tqdm
-import ipdb;pdb=ipdb.set_trace
 try:
     from .utils import draw_2Dimg, convert18
 except:

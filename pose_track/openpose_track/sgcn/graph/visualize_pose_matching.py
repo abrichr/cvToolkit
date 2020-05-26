@@ -20,7 +20,6 @@ sys.path.append(main_path+"/../visualizer")
 sys.path.append(main_path+"/../graph")
 from utils_json import *
 from utils_io_folder import *
-import ipdb; pdb=ipdb.set_trace
 
 from keypoint_visualizer import *
 from detection_visualizer import *

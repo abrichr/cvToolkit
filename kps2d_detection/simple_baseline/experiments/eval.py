@@ -8,7 +8,6 @@ from __future__ import print_function
 import argparse
 import os
 import pprint
-import ipdb;pdb=ipdb.set_trace
 import numpy as np
 from tqdm import tqdm
 
@@ -202,7 +201,6 @@ def model_load(config):
         name = k # remove module.
         print(name,'\t')
         new_state_dict[name] = v
-    #  import ipdb;ipdb.set_trace()
     model.load_state_dict(new_state_dict)
     return model
 

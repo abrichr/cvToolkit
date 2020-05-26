@@ -3,7 +3,6 @@ import os
 import cv2
 import numpy as np
 import requests
-import ipdb; pdb=ipdb.set_trace
 from utils_custom import convert_coco_poseTrack
 sys.path.append(os.path.abspath("./../graph/"))
 from graph.visualize_pose_matching import pose_matching, graph_pair_to_data

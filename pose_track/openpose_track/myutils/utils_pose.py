@@ -2,7 +2,6 @@ import sys
 import os
 import cv2
 import numpy as np
-import ipdb; pdb=ipdb.set_trace
 import numpy as np
 import asyncio
 

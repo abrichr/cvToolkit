@@ -18,7 +18,6 @@ import os.path as osp
 from darknet import Darknet
 from preprocess import prep_image, inp_to_image
 import random
-import ipdb;pdb=ipdb.set_trace
 sys.path.pop(0)
 
 num_classes = 80

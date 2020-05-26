@@ -157,7 +157,6 @@ def write_results(prediction, confidence, num_classes, nms = True, nms_conf = 0.
         except:
              continue
         #WE will do NMS classwise
-        #  import ipdb;ipdb.set_trace()
         for cls in img_classes:
             #get the detections with one particular class
             cls_mask = image_pred_*(image_pred_[:,-1] == cls).float().unsqueeze(1)
@@ -190,7 +189,6 @@ def write_results(prediction, confidence, num_classes, nms = True, nms_conf = 0.
                         break
 
                     #Zero out all the detections that have IoU > treshhold
-                    #  import ipdb;ipdb.set_trace()
                     iou_mask = (ious < nms_conf).float().unsqueeze(1)
                     image_pred_class[i+1:] *= iou_mask
 
@@ -216,7 +214,6 @@ def write_results(prediction, confidence, num_classes, nms = True, nms_conf = 0.
                 out = torch.cat(seq,1)
                 output = torch.cat((output,out))
 
-    #  import ipdb;ipdb.set_trace()
     return output
 
 

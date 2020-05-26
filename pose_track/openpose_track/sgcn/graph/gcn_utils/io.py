@@ -18,7 +18,6 @@ import torchlight
 from torchlight import str2bool
 from torchlight import DictAction
 from torchlight import import_class
-import ipdb; pdb=ipdb.set_trace
 
 class IO():
     """

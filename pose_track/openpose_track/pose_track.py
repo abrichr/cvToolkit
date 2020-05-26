@@ -5,7 +5,6 @@ import asyncio
 from tqdm import tqdm
 import cv2
 import numpy as np
-import ipdb; pdb=ipdb.set_trace
 import sys, os, time
 from myutils.utils_track import get_track_id_SGCN_plus, is_keyframe, is_target_lost, get_track_id_SpatialConsistency, get_bbox_from_keypoints
 from myutils.utils_pose import convert17_18

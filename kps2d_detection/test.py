@@ -2,7 +2,6 @@ import os
 import cv2
 from tqdm import tqdm
 from pose_utils import draw_img17, resize_img, draw_img18, convert18
-import ipdb;pdb=ipdb.set_trace
 from argparse import ArgumentParser
 import numpy as np
 MAXTORSO = 0

@@ -4,7 +4,6 @@ import os
 from sys import platform
 import argparse
 from tqdm import tqdm
-import ipdb;pdb=ipdb.set_trace
 import numpy as np
 try:
     sys.path.append('/usr/local/python')

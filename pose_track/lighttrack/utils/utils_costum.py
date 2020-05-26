@@ -1,7 +1,6 @@
 import numpy as np
 import cv2
 from cv_utils import add_text
-import ipdb; pdb=ipdb.set_trace
 
 ## Convert COCO keypoints to PoseTrack keypoints
 def conver_coco_poseTrack(kps):

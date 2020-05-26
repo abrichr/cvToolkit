@@ -1,7 +1,6 @@
 import os
 import sys
 import pprint
-import ipdb;pdb=ipdb.set_trace
 import numpy as np
 from tqdm import tqdm
 import cv2

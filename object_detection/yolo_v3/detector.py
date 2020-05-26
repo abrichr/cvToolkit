@@ -21,7 +21,6 @@ import pandas as pd
 import random
 import pickle as pkl
 import itertools
-import ipdb;pdb=ipdb.set_trace
 sys.path.pop(0)
 
 num_classes = 80
@@ -131,7 +130,6 @@ def main(images, model=None):
     load_batch = time.time()
 
     inp_dim = int(model.net_info["height"])
-    #  import ipdb;ipdb.set_trace()
     batches = list(map(prep_image, imlist, [inp_dim for x in range(len(imlist))]))
     im_batches = [x[0] for x in batches]
     orig_ims = [x[1] for x in batches]
@@ -173,7 +171,6 @@ def main(images, model=None):
         #flatten the prediction vector
         # B x (bbox cord x no. of anchors) x grid_w x grid_h --> B x bbox x (all the boxes)
         # Put every proposed box as a row.
-        #  import ipdb;ipdb.set_trace()
         with torch.no_grad():
             prediction = model(Variable(batch), CUDA)
 

@@ -99,7 +99,6 @@ def get_pose_matching_score(keypoints_A, keypoints_B, bbox_A, bbox_B):
 
     sample_graph_pair = (graph_A, graph_B)
     data_A, data_B = graph_pair_to_data(sample_graph_pair)
-    #  import ipdb;ipdb.set_trace()
     #  flag_match, dist = pose_matching(data_A, data_B)
     flag_match, dist = pose_matching_local(data_A, data_B)
     return dist

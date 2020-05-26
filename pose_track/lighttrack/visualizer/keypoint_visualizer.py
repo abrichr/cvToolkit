@@ -99,7 +99,6 @@ def show_poses_from_standard_json(json_file_path, joint_pairs, joint_names, img_
         for candidate in candidates:
             pose_keypoints_2d = candidate["pose_keypoints_2d"]
             joints = reshape_keypoints_into_joints(pose_keypoints_2d)
-            import ipdb;ipdb.set_trace()
             img = show_poses_from_python_data(img, joints, joint_pairs, joint_names)
 
         if output_folder_path is not None:

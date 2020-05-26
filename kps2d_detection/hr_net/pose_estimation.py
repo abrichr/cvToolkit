@@ -6,7 +6,6 @@ import os
 this_dir = os.path.split(os.path.realpath(__file__))[0]
 lib_path = os.path.join(this_dir, 'lib')
 sys.path.insert(0, lib_path)
-import ipdb;pdb=ipdb.set_trace
 from core.inference import get_final_preds
 from utils.transforms import *
 from config import cfg

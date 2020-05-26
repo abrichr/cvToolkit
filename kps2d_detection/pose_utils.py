@@ -2,7 +2,6 @@ import json
 import cv2
 import numpy as np
 import os
-import ipdb;pdb=ipdb.set_trace
 
 class common():
 
